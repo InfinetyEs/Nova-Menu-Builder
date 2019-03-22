@@ -44,9 +44,9 @@ public function tools()
 
 ## Helpers
 
-There are two helpers built in for your blades
+There are three helpers built in for your blades
 
-* **menu_builder('slug')**.    
+* **menu_builder('slug')**.
 
 	Creates an html menu for given slug. Extra options are not required. By default tags are `ul` and `li`, and without html classes.
 
@@ -58,7 +58,15 @@ There are two helpers built in for your blades
 {!! menu_builder('main', 'parent-class', 'child-class', 'dl', 'dd') !!}
 ```
 
-* **menu_json('slug')**.   
+* **menu_name('slug')**.
+
+	Returns the name of the menu for a given slug.
+
+```php
+{{ menu_name('main') }}
+```
+
+* **menu_json('slug')**.
 
 	Returns a json with all items for given slug.
 
