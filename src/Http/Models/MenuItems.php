@@ -45,7 +45,9 @@ class MenuItems extends Model
      */
     public function children(): HasMany
     {
-        return $this->hasMany(self::class, 'parent_id')->with('children');
+        return $this->hasMany(self::class, 'parent_id')
+            ->orderBy('order', 'asc')
+            ->with('children');
     }
 
     /**
