@@ -26,6 +26,26 @@ if (!function_exists('menu_builder')) {
     }
 }
 
+if (!function_exists('menu_name')) {
+
+    /**
+     * Return menu name as a string
+     *
+     * @param   string  $slug
+     *
+     * @return  string
+     */
+    function menu_name($slug)
+    {
+        $menu = Menu::whereSlug($slug)->first();
+        if (!$menu) {
+            return '';
+        }
+
+        return $menu->name;
+    }
+}
+
 if (!function_exists('menu_json')) {
 
     /**
