@@ -2,6 +2,17 @@
 
 use Infinety\MenuBuilder\Http\Models\Menu;
 
+if (!function_exists('getMenuBySlug')) {
+    function getMenuBySlug($slug)
+    {
+        return Menu::whereHas('items', function($query){
+            $query->with('children');
+            $query->where('enabled',1);
+            $query->orderBy('order', 'asc');
+        })->whereSlug($slug)->first();
+    }
+}
+
 if (!function_exists('menu_builder')) {
 
     /**
