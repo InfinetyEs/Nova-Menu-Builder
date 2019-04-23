@@ -74,7 +74,7 @@ There are three helpers built in for your blades
 ## Example using blade.
 
 ```blade
-@foreach (getMenuBySlug('header')->items as $menuItem)
+@foreach (getMenuBySlug('header')->parentItems as $menuItem)
     @include('menu-builder::menu-item', [
       'menu' => $menuItem,
       'active_top_class' => 'active',
