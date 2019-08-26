@@ -1,5 +1,5 @@
 {
-    "name": "dharmeshshah09/Laravel-Nova-Menu-Builder",
+    "name": "dharmeshshah09/nova-menu-builder",
     "description": "Menu Builder Tool for Laravel Nova.",
     "keywords": [
         "laravel",
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Infinety\\MenuBuilder\\MenuBuilderServiceProvider"
+                "dharmeshshah09\\MenuBuilder\\MenuBuilderServiceProvider"
             ]
         }
     },
