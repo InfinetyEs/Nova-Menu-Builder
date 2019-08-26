@@ -1,5 +1,5 @@
 {
-    "name": "infinety-es/nova-menu-builder",
+    "name": "dharmeshshah09/Laravel-Nova-Menu-Builder",
     "description": "Menu Builder Tool for Laravel Nova.",
     "keywords": [
         "laravel",
@@ -11,15 +11,10 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Eric Lagarda",
-            "email": "eric@infinety.es",
+            "name": "dharmeshshah09",
+            "email": "dharmesh@arhamwebworks.com",
             "role": "Developer"
         },
-        {
-            "name": "InfinetyEs",
-            "email": "apps@infinety.es",
-            "role": "Maintainer"
-        }
     ],
     "require": {
         "php": ">=7.1.0"
