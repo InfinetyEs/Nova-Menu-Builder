@@ -7,9 +7,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Route;
 use Infinety\MenuBuilder\Http\Models\Menu;
+use Webpatser\Uuid\Uuid;
 
 class MenuItems extends Model
 {
+	public $incrementing = false;
+    protected $guarded = [];
     /**
      * @var array
      */
@@ -35,6 +38,21 @@ class MenuItems extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
+	 
+	 public static function boot()
+    {
+        //parent::boot();
+
+        // static::saving(function ($model) {
+        //     $model->id = (string) Uuid::generate(4);
+        // });
+
+        parent::boot();
+        self::creating(function ($model) {
+            $model->id = (string) Uuid::generate(4);
+        });
+    }
+	
     public function menu(): BelongsTo
     {
         return $this->belongsTo(Menu::class);

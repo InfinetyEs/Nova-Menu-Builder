@@ -5,6 +5,7 @@ namespace Infinety\MenuBuilder\Http\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Infinety\MenuBuilder\Http\Models\MenuItems;
+use Webpatser\Uuid\Uuid;
 
 class Menu extends Model
 {
@@ -17,6 +18,9 @@ class Menu extends Model
      * @var string
      */
     protected $defaultChildTag = 'li';
+	public $incrementing = false;
+    protected $guarded = [];
+	
 
     /**
      * Boot
@@ -26,6 +30,7 @@ class Menu extends Model
         parent::boot();
 
         static::saving(function ($model) {
+			$model->id = (string) Uuid::generate(4);
             $model->slug = str_slug($model->name);
         });
     }

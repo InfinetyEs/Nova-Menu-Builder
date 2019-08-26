@@ -37,7 +37,9 @@ class MenuResource extends Resource
     /**
      * @var mixed
      */
-    public static $displayInNavigation = false;
+    public static $displayInNavigation = true;
+	public static $group = 'Display Admin';
+
 
     /**
      * Get the fields displayed by the resource.
@@ -54,7 +56,7 @@ class MenuResource extends Resource
                 ->sortable()
                 ->rules('required', 'max:255', 'unique:menus,name'),
 
-            Text::make(__('Slug'), 'slug')->hideWhenCreating()->hideWhenUpdating(),
+            Text::make(__('Slug'), 'slug'),
 
             Text::make(__('Menu Helper'), function () {
                 return "<code class='p-2 bg-30 text-sm'><span class='text-primary'>{!!</span> <span class='text-info'>menu_builder(</span><span class='text-success'>'".$this->slug."'</span><span class='text-info'>)</span> <span class='text-primary'>!!}</span></code>";
@@ -116,7 +118,7 @@ class MenuResource extends Resource
      */
     public static function label()
     {
-        return 'Menus';
+        return 'Web Menu';
     }
 
     /**
