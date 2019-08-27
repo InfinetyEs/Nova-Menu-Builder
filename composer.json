@@ -8,6 +8,12 @@
         "builder",
         "infinety"
     ],
+	 "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nova-menu-builder"
+        }
+],
     "license": "MIT",
     "authors": [
         {
