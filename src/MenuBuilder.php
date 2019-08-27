@@ -1,6 +1,6 @@
 <?php
 
-namespace dharmeshshah09\MenuBuilder;
+namespace Infinety\MenuBuilder;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
