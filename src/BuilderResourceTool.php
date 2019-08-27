@@ -1,6 +1,6 @@
 <?php
 
-namespace Infinety\MenuBuilder;
+namespace dharmeshshah09\MenuBuilder;
 
 use Laravel\Nova\ResourceTool;
 
