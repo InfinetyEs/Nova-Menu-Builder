@@ -1,12 +1,12 @@
 <?php
 
-namespace dharmeshshah09\MenuBuilder\Http\Models;
+namespace Infinety\MenuBuilder\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Route;
-use dharmeshshah09\MenuBuilder\Http\Models\Menu;
+use Infinety\MenuBuilder\Http\Models\Menu;
 use Webpatser\Uuid\Uuid;
 
 class MenuItems extends Model
