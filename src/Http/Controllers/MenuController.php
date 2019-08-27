@@ -59,7 +59,7 @@ class MenuController extends Controller
     {
         $data = $request->all();
         //$data['order'] = MenuItems::max('id') + 1;
-		$data['order'] = MenuItems::where('id',$request->menu_id)->max('order') + 1;
+		$data['order'] = MenuItems::where('id',$request->menu_id)->max('order') + 1; 
         $menuItem = MenuItems::create($data);
 
         return response()->json([
