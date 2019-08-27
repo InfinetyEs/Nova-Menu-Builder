@@ -1,6 +1,6 @@
 <?php
 
-namespace Infinety\MenuBuilder\Http\Middleware;
+namespace dharmeshshah09\MenuBuilder\Http\Middleware;
 
 use Infinety\MenuBuilder\MenuBuilder;
 
