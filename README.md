@@ -115,30 +115,6 @@ Set your translations in the corresponding xx.json file located in /resources/la
 "Disabled": "Disabled"
 ```
 
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security
-
-If you discover any security related issues, please email apps@infinety.es instead of using the issue tracker.
-
-## Postcardware
-
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
-
-Our address is: Infinety - Calle Comedias, 8 Floor 3, Suite 5 46003 Valencia (Spain).
-
-## Credits
-
-- [Eric Lagarda](https://github.com/Krato)
-- [Ralph Huwiler (vue-nestable)](https://github.com/rhwilr/vue-nestable)
-
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
