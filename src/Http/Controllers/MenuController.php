@@ -1,12 +1,12 @@
 <?php
 
-namespace Infinety\MenuBuilder\Http\Controllers;
+namespace dharmeshshah09\MenuBuilder\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Infinety\MenuBuilder\Http\Models\Menu;
-use Infinety\MenuBuilder\Http\Models\MenuItems;
-use Infinety\MenuBuilder\Http\Requests\NewMenuItemRequest;
+use dharmeshshah09\MenuBuilder\Http\Models\Menu;
+use dharmeshshah09\MenuBuilder\Http\Models\MenuItems;
+use dharmeshshah09\MenuBuilder\Http\Requests\NewMenuItemRequest;
 
 class MenuController extends Controller
 {
