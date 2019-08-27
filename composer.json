@@ -14,7 +14,7 @@
             "name": "dharmeshshah09",
             "email": "dharmesh@arhamwebworks.com",
             "role": "Developer"
-        },
+        }
     ],
     "require": {
         "php": ">=7.1.0"
