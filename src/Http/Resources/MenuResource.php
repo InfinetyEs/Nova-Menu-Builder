@@ -140,4 +140,4 @@ class MenuResource extends Resource
     {
         return 'menu-builder';
     }
-}
+} 
