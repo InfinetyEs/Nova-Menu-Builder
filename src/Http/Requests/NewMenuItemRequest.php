@@ -1,10 +1,10 @@
 <?php
 
-namespace dharmeshshah09\MenuBuilder\Http\Requests;
+namespace Infinety\MenuBuilder\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Route;
-use dharmeshshah09\MenuBuilder\MenuBuilder;
+use Infinety\MenuBuilder\MenuBuilder;
 
 class NewMenuItemRequest extends FormRequest
 {
