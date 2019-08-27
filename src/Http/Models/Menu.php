@@ -172,7 +172,7 @@ class Menu extends Model
      * @return  string
      */
     private function closeTag($tag)
-    {
+    { 
         return "</{$tag}>";
     }
 }
