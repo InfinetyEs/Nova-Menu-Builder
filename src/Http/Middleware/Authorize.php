@@ -2,7 +2,7 @@
 
 namespace dharmeshshah09\MenuBuilder\Http\Middleware;
 
-use Infinety\MenuBuilder\MenuBuilder;
+use dharmeshshah09\MenuBuilder\MenuBuilder;
 
 class Authorize
 {
