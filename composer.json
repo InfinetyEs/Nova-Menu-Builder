@@ -17,7 +17,8 @@
         },
     ],
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+		"dharmeshshah09/nova-menu-builder": "dev-master"
     },
     "autoload": {
         "psr-4": {
