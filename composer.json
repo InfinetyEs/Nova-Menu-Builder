@@ -10,7 +10,7 @@
     ],
 	 "repositories": [
         {
-            "type": "package",
+            "type": "vcs",
             "url": "https://github.com/dharmeshshah09/Laravel-Nova-Menu-Builder.git"
         }
 ],
