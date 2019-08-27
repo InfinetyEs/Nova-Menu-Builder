@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dharmeshshah09/laravelnovamenubuilder": "src/"
+            "dharmeshshah09/laravelnovamenubuilder\\": "src/"
         },
         "files": [
           "src/Http/helpers.php"
