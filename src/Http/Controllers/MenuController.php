@@ -8,7 +8,7 @@ use Infinety\MenuBuilder\Http\Models\Menu;
 use Infinety\MenuBuilder\Http\Models\MenuItems;
 use Infinety\MenuBuilder\Http\Requests\NewMenuItemRequest;
 
-class MenuController extends Controller
+class MenuController extends Controller 
 {
     /**
      * Return menu items for given menu
@@ -22,7 +22,7 @@ class MenuController extends Controller
         if (!$request->has('menu')) {
             abort(503);
         }
-
+        //  print_r($request->get('menu'));
         return Menu::find($request->get('menu'))->optionsMenu();
     }
 
@@ -34,8 +34,8 @@ class MenuController extends Controller
      * @return  json
      */
     public function saveItems(Request $request)
-    {
-        $menu = Menu::find((int) $request->get('menu'));
+    { 
+        $menu = Menu::find($request->get('menu'));
         $items = $request->get('items');
         $i = 1;
         foreach ($items as $item) {
@@ -49,6 +49,7 @@ class MenuController extends Controller
     }
 
     /**
+    /**
      * Create new menu item
      *
      * @param   NewMenuItemRequest  $request
@@ -58,13 +59,12 @@ class MenuController extends Controller
     public function createNew(NewMenuItemRequest $request)
     {
         $data = $request->all();
-        //$data['order'] = MenuItems::max('id') + 1;
-		$data['order'] = MenuItems::where('id',$request->menu_id)->max('order') + 1; 
+        $data['order'] = MenuItems::where('id',$request->menu_id)->max('order') + 1;
         $menuItem = MenuItems::create($data);
 
         return response()->json([
-            'success' => true,
-        ]);
+        'success' => true,
+         ]);
     }
 
     /**
@@ -123,6 +123,7 @@ class MenuController extends Controller
      */
     private function saveMenuItem($order, $item, $parentId = null)
     {
+       
         $menuItem = MenuItems::find($item['id']);
         $menuItem->order = $order;
         $menuItem->parent_id = $parentId;
