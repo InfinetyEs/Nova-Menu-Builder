@@ -8,12 +8,6 @@
         "builder",
         "infinety"
     ],
-	 "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/dharmeshshah09/Laravel-Nova-Menu-Builder.git"
-        }
-],
     "license": "MIT",
     "authors": [
         {
@@ -43,6 +37,6 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
