@@ -1,5 +1,5 @@
 {
-    "name": "dharmeshshah09/nova-menu-builder",
+    "name": "dharmeshshah09/laravel-nova-menu-builder",
     "description": "Menu Builder Tool for Laravel Nova.",
     "keywords": [
         "laravel",
@@ -17,8 +17,7 @@
         },
     ],
     "require": {
-        "php": ">=7.1.0",
-		"dharmeshshah09/nova-menu-builder": "dev-master"
+        "php": ">=7.1.0"
     },
     "autoload": {
         "psr-4": {
