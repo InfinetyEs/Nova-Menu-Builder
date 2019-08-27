@@ -4,8 +4,8 @@ namespace dharmeshshah09\MenuBuilder;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Infinety\MenuBuilder\Http\Middleware\Authorize;
-use Infinety\MenuBuilder\Http\Resources\MenuResource;
+use dharmeshshah09\MenuBuilder\Http\Middleware\Authorize;
+use dharmeshshah09\MenuBuilder\Http\Resources\MenuResource;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
 
