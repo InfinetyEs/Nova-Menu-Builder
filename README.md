@@ -1,4 +1,4 @@
-# Nova Menu Builder
+# Nova Menu Builder Using with Uuid
 
 This tool allows you to create menus in Laravel Nova
 
@@ -13,7 +13,7 @@ This tool allows you to create menus in Laravel Nova
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require infinety-es/nova-menu-builder
+composer require dharmeshshah09/laravel-nova-menu-builder
 ```
 
 Then you should publish the database table file and migrate it:
