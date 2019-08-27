@@ -1,10 +1,10 @@
 <?php
 
-namespace dharmeshshah09\MenuBuilder\Http\Resources;
+namespace Infinety\MenuBuilder\Http\Resources;
 
 use Illuminate\Http\Request;
-use dharmeshshah09\MenuBuilder\BuilderResourceTool;
-use dharmeshshah09\MenuBuilder\Http\Models\Menu;
+use Infinety\MenuBuilder\BuilderResourceTool;
+use Infinety\MenuBuilder\Http\Models\Menu;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Resource;
