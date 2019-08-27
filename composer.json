@@ -10,8 +10,8 @@
     ],
 	 "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/nova-menu-builder"
+            "type": "package",
+            "url": "https://github.com/dharmeshshah09/Laravel-Nova-Menu-Builder.git"
         }
 ],
     "license": "MIT",
