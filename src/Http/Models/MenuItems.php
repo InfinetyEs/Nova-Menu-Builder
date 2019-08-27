@@ -150,5 +150,5 @@ class MenuItems extends Model
     public function html()
     {
         return '<a class="nav-link '.$this->classes.'" href="'.$this->link.'" target="'.$this->target.'">'.$this->name.'</a>';
-    }
+    } 
 }
