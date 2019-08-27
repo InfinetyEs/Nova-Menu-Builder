@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Infinety\\MenuBuilder\\": "src/"
+            "dharmeshshah09/laravel-nova-menu-builder": "src/"
         },
         "files": [
           "src/Http/helpers.php"
