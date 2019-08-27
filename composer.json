@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dharmeshshah09\\MenuBuilder\\": "src/"
+             "Infinety\\MenuBuilder\\": "src/"
         },
         "files": [
           "src/Http/helpers.php"
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "dharmeshshah09\\MenuBuilder\\MenuBuilderServiceProvider"
+                "Infinety\\MenuBuilder\\MenuBuilderServiceProvider"
             ]
         }
     },
