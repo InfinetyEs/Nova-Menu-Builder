@@ -4,9 +4,7 @@ This tool allows you to create menus in Laravel Nova
 
 <img width="1439" alt="menu builder Home" src="https://user-images.githubusercontent.com/42798230/50765532-7632ea80-1276-11e9-8fed-ec1f6d53983a.png">
 
-
 <img width="1439" alt="Menu Builder Items" src="https://user-images.githubusercontent.com/42798230/50765390-06bcfb00-1276-11e9-9e82-fd7956507c78.png">
-
 
 ## Installation
 
@@ -22,7 +20,6 @@ Then you should publish the database table file and migrate it:
 php artisan vendor:publish --tag=menu-builder-migration
 php artisan migrate
 ```
-
 
 ## Usage
 
@@ -46,9 +43,9 @@ public function tools()
 
 There are three helpers built in for your blades
 
-* **menu_builder('slug')**.
+-   **menu_builder('slug')**.
 
-	Creates an html menu for given slug. Extra options are not required. By default tags are `ul` and `li`, and without html classes.
+        	Creates an html menu for given slug. Extra options are not required. By default tags are `ul` and `li`, and without html classes.
 
 ```php
 {!! menu_builder('main') !!}
@@ -58,27 +55,37 @@ There are three helpers built in for your blades
 {!! menu_builder('main', 'parent-class', 'child-class', 'dl', 'dd') !!}
 ```
 
-* **menu_name('slug')**.
+-   **menu_name('slug')**.
 
-	Returns the name of the menu for a given slug.
+        	Returns the name of the menu for a given slug.
 
 ```php
 {{ menu_name('main') }}
 ```
 
-* **menu_json('slug')**.
+-   **menu_json('slug')**.
 
-	Returns a json with all items for given slug.
+        	Returns a json with all items for given slug.
 
 ```php
 {!! menu_json('main') !!}
 ```
 
+## Example using blade.
+
+```blade
+@foreach (getMenuBySlug('header')->parentItems as $menuItem)
+    @include('menu-builder::menu-item', [
+      'menu' => $menuItem,
+      'active_top_class' => 'active',
+      'active_child_class' => 'active',
+    ])
+@endforeach
+```
 
 ## Localization
 
 Set your translations in the corresponding xx.json file located in /resources/lang/vendor/nova
-
 
 ```json
 "Menu Builder": "Menu Builder",
@@ -115,7 +122,6 @@ Set your translations in the corresponding xx.json file located in /resources/la
 "Disabled": "Disabled"
 ```
 
-
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
@@ -136,8 +142,8 @@ Our address is: Infinety - Calle Comedias, 8 Floor 3, Suite 5 46003 Valencia (Sp
 
 ## Credits
 
-- [Eric Lagarda](https://github.com/Krato)
-- [Ralph Huwiler (vue-nestable)](https://github.com/rhwilr/vue-nestable)
+-   [Eric Lagarda](https://github.com/Krato)
+-   [Ralph Huwiler (vue-nestable)](https://github.com/rhwilr/vue-nestable)
 
 ## License
 
