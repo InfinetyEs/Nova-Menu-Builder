@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Route;
 use Infinety\MenuBuilder\Http\Models\Menu;
+use Illuminate\Support\Str;
 
 class MenuItems extends Model
 {
@@ -113,7 +114,7 @@ class MenuItems extends Model
             return route($this->route, $this->parameters, $absolute);
         }
 
-        if (starts_with($this->url, 'http')) {
+        if (Str::startsWith($this->url, 'http')) {
             $absolute = true;
         }
 
